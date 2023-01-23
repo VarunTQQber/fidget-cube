@@ -4,17 +4,17 @@ input.onButtonPressed(Button.A, function () {
 input.onGesture(Gesture.TiltLeft, function () {
     if (sprite_on == 1) {
         sprite.move(-1)
-    }
-    if (sprite.get(LedSpriteProperty.X) == 0) {
-        music.playTone(262, music.beat(BeatFraction.Whole))
-    } else if (sprite.get(LedSpriteProperty.X) == 1) {
-        music.playTone(294, music.beat(BeatFraction.Whole))
-    } else if (sprite.get(LedSpriteProperty.X) == 2) {
-        music.playTone(330, music.beat(BeatFraction.Whole))
-    } else if (sprite.get(LedSpriteProperty.X) == 3) {
-        music.playTone(349, music.beat(BeatFraction.Whole))
-    } else {
-        music.playTone(392, music.beat(BeatFraction.Whole))
+        if (sprite.get(LedSpriteProperty.X) == 0) {
+            music.playTone(262, music.beat(BeatFraction.Whole))
+        } else if (sprite.get(LedSpriteProperty.X) == 1) {
+            music.playTone(294, music.beat(BeatFraction.Whole))
+        } else if (sprite.get(LedSpriteProperty.X) == 2) {
+            music.playTone(330, music.beat(BeatFraction.Whole))
+        } else if (sprite.get(LedSpriteProperty.X) == 3) {
+            music.playTone(349, music.beat(BeatFraction.Whole))
+        } else {
+            music.playTone(392, music.beat(BeatFraction.Whole))
+        }
     }
 })
 input.onPinPressed(TouchPin.P2, function () {
@@ -103,17 +103,17 @@ basic.showLeds(`
 input.onGesture(Gesture.TiltRight, function () {
     if (sprite_on == 1) {
         sprite.move(1)
-    }
-    if (sprite.get(LedSpriteProperty.X) == 0) {
-        music.playTone(262, music.beat(BeatFraction.Whole))
-    } else if (sprite.get(LedSpriteProperty.X) == 1) {
-        music.playTone(294, music.beat(BeatFraction.Whole))
-    } else if (sprite.get(LedSpriteProperty.X) == 2) {
-        music.playTone(330, music.beat(BeatFraction.Whole))
-    } else if (sprite.get(LedSpriteProperty.X) == 3) {
-        music.playTone(349, music.beat(BeatFraction.Whole))
-    } else {
-        music.playTone(392, music.beat(BeatFraction.Whole))
+        if (sprite.get(LedSpriteProperty.X) == 0) {
+            music.playTone(262, music.beat(BeatFraction.Whole))
+        } else if (sprite.get(LedSpriteProperty.X) == 1) {
+            music.playTone(294, music.beat(BeatFraction.Whole))
+        } else if (sprite.get(LedSpriteProperty.X) == 2) {
+            music.playTone(330, music.beat(BeatFraction.Whole))
+        } else if (sprite.get(LedSpriteProperty.X) == 3) {
+            music.playTone(349, music.beat(BeatFraction.Whole))
+        } else {
+            music.playTone(392, music.beat(BeatFraction.Whole))
+        }
     }
 })
 input.onLogoEvent(TouchButtonEvent.Touched, function () {
