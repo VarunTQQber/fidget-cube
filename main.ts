@@ -1,5 +1,5 @@
 input.onButtonPressed(Button.A, function () {
-    basic.showString("How Are You?")
+    basic.showString("How Are You?",60)
 })
 input.onGesture(Gesture.TiltLeft, function () {
     if (sprite_on == 1) {
@@ -136,7 +136,7 @@ let oddOrEven = 0
 let sprite_on = 0
 sprite_on = 0
 oddOrEven = 0
-basic.showString("FIDGET! pin 2 = game")
+basic.showString("FIDGET! pin 2 = game", 50)
 basic.forever(function () {
 	
 })
